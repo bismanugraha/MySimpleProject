@@ -1,0 +1,25 @@
+// This is a simple code for scope testing using Java languange
+
+package latihan.h2;
+
+public class TestingScope {
+    public static void main(String[] args) {
+        ScopeExample se = new ScopeExample();
+        se.firstMethod();
+    }
+}
+
+class ScopeExample {
+    private int i = 1;
+
+    public void firstMethod() {
+        int i = 4, j = 5;
+        System.out.println(this.i = i + j);
+        secondMethod(7);
+    }
+
+    public void secondMethod(int i) {
+        int j = 8;
+        System.out.println(this.i = i + j);
+    }
+}
