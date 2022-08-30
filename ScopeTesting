@@ -1,5 +1,3 @@
-// This is a simple code for scope testing using Java languange
-
 package latihan.h2;
 
 public class TestingScope {
